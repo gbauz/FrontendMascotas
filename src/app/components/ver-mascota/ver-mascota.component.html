@@ -1,0 +1,22 @@
+<div class="title">
+    <h1>Ver Mascota</h1>
+   
+</div>
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="mascota != null" class="container">
+   
+    <mat-card class="card">
+        <mat-card-title> {{ mascota.nombre }} </mat-card-title>
+        <mat-card-content>
+            <p><strong>Raza:</strong>{{ mascota.apellido }}</p>
+         
+           
+        </mat-card-content>
+        
+        <mat-card-actions   >
+            <button routerLink="/listadoMascotas" mat-raised-button >Volver</button>
+            
+        </mat-card-actions>
+
+    </mat-card>
+</div>
